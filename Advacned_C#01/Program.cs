@@ -39,12 +39,30 @@ namespace Advacned_C_01
             //Console.WriteLine($"After Swaping  x = {x} , y = {y}"); //20 - 10
             #endregion
 
+            #region Q5: Write a generic method FindMax<T> that finds maximum value
+
+            //List<int> list = new(){1,2,10, 3, 4, 5};
+            //Console.WriteLine(FindMax(list)); //10
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {
             T swap = a;
             a = b;
             b = swap;
+        }
+
+        public static T FindMax<T>(List<T> values) where T : IComparable<T>
+        {
+            T Max = values[0];
+            foreach (T value in values)
+            {
+                //if(value > Max)
+                if (value.CompareTo(Max) > 0)
+                    Max = value;
+            }
+            return Max;
         }
     }
     public class Pair<TKey, TValue>

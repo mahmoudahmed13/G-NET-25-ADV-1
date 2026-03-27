@@ -22,6 +22,24 @@ namespace Advacned_C_01
             //    public List<T> GetValues() => _containers;
             //}
             #endregion
+
+            #region Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+            //Generic classes can have multiple type parameters
+
+            //Pair<int, string> pair = new(1, "One");
+
+            #endregion
         }
+    }
+    public class Pair<TKey, TValue>
+    {
+        public Pair(TKey first, TValue second)
+        {
+            First = first;
+            Second = second;
+        }
+
+        public TKey First { get; set; }
+        public TValue Second { get; set; }
     }
 }

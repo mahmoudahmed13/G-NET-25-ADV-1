@@ -45,6 +45,12 @@ namespace Advacned_C_01
             //Console.WriteLine(FindMax(list)); //10
             #endregion
 
+            #region Q6: What is a generic interface? Write IRepository<T>.
+            //Generic interfaces define contracts with type parameters.
+            //Classes implementing them specify the actual types.
+
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {
@@ -75,5 +81,10 @@ namespace Advacned_C_01
 
         public TKey First { get; set; }
         public TValue Second { get; set; }
+    }
+    public interface IRepository<TEntity>
+    {
+        void Add(TEntity item);
+        List<TEntity> GetAll();
     }
 }

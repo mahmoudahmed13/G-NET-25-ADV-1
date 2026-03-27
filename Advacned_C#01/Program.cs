@@ -29,6 +29,22 @@ namespace Advacned_C_01
             //Pair<int, string> pair = new(1, "One");
 
             #endregion
+
+            #region Q4: What is a generic method? Write Swap<T> method.
+            ////A generic method declares its own type parameter(s)
+
+            //int x = 10,y = 20;
+            //Console.WriteLine($"Before Swaping  x = {x} , y = {y}");//10 - 20
+            //Swap(ref x,ref y);
+            //Console.WriteLine($"After Swaping  x = {x} , y = {y}"); //20 - 10
+            #endregion
+
+        }
+        public static void Swap<T>(ref T a, ref T b)
+        {
+            T swap = a;
+            a = b;
+            b = swap;
         }
     }
     public class Pair<TKey, TValue>

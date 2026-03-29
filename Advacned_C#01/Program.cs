@@ -60,6 +60,18 @@ namespace Advacned_C_01
             //Console.WriteLine(genericStruct.GetValues().Count); //3
             #endregion
 
+            #region Q8: What is the 'class' constraint? Write an example.
+            //T must be a reference type
+            //GenericClass<string> genericClass = new GenericClass<string>();
+            //genericClass.Add("Mahmoud");
+            //genericClass.Add("Ali");
+            //genericClass.Add("Mohammed");
+
+            //Console.WriteLine(genericClass.GetValues().Count); //3
+            #endregion
+
+
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

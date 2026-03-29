@@ -131,6 +131,10 @@ namespace Advacned_C_01
 
             #endregion
 
+            #region Q18: How do static members work in generic types?
+            //Each closed generic type has its own copy of static fields,not shared across different type arguments.
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

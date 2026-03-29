@@ -135,6 +135,17 @@ namespace Advacned_C_01
             //Each closed generic type has its own copy of static fields,not shared across different type arguments.
             #endregion
 
+            #region Q19: How can you inherit from a generic class?
+            //1: Inherit and Pass Type Parameter
+            //internal class Employee<T> : Person<T> { }
+            //2: Inherit with concrete type
+            //internal class Employee : Person<int> { }
+            //3: Add new type parameter
+            //internal class Employee<T,T2> : Person<T> { }
+            //4: With Constraints
+            //internal class Employee<T> : Person<T> where T: class, new() { }
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

@@ -99,6 +99,9 @@ namespace Advacned_C_01
 
             #endregion
 
+            #region Q13: What does the 'default' keyword do in generics?
+            // returns the default value for type T: null for reference types, 0/false for value types.
+            #endregion
 
         }
         public static void Swap<T>(ref T a, ref T b)

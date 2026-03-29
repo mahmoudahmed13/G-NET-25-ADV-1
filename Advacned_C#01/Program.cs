@@ -51,6 +51,15 @@ namespace Advacned_C_01
 
             #endregion
 
+            #region Q7: What is the 'struct' constraint? Write an example.
+            ////T must be a value type
+            //GenericStruct<double> genericStruct = new();
+            //genericStruct.Add(5);
+            //genericStruct.Add(4);
+            //genericStruct.Add(2);
+            //Console.WriteLine(genericStruct.GetValues().Count); //3
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

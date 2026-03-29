@@ -70,7 +70,12 @@ namespace Advacned_C_01
             //Console.WriteLine(genericClass.GetValues().Count); //3
             #endregion
 
+            #region Q9: What is the 'new()' constraint? Write an example.
+            ////T must have parameterless constructor.
 
+            //GenericParamterless<Person> genericParamterless = new();
+            //genericParamterless.Create();
+            #endregion
 
         }
         public static void Swap<T>(ref T a, ref T b)

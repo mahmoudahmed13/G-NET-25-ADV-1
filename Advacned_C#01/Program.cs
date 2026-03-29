@@ -117,8 +117,14 @@ namespace Advacned_C_01
             //In generic terms, if Dog derives from Animal, covariance lets you treat List<Dog>
             //as List<Animal> — moving from more specific to more general.
             //The out keyword marks a generic type parameter as covariant.
-            
+
             #endregion
+
+            #region Q16: What is contravariance? Explain the 'in' keyword.
+            //Contravariance allows you to use a less derived type than originally specified.
+            //Marked with in keyword. T can only appear in input positions.
+            #endregion
+
 
         }
         public static void Swap<T>(ref T a, ref T b)

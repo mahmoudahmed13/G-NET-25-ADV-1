@@ -112,6 +112,14 @@ namespace Advacned_C_01
             //Console.WriteLine(safeList.GetIndex(5)); //0
             #endregion
 
+            #region Q15: What is covariance? Explain the 'out' keyword.
+            //Covariance allows you to use a more derived type than originally specified.
+            //In generic terms, if Dog derives from Animal, covariance lets you treat List<Dog>
+            //as List<Animal> — moving from more specific to more general.
+            //The out keyword marks a generic type parameter as covariant.
+            
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

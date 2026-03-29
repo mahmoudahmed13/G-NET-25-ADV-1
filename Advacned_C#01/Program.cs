@@ -146,6 +146,18 @@ namespace Advacned_C_01
             //internal class Employee<T> : Person<T> where T: class, new() { }
             #endregion
 
+            #region Q20: Complete Exercise - Create a generic Cache<TKey, TValue>
+            ////with Add, Get, Remove, Contains, and expiration support. 
+            //GenericCashe<int ,string> cashe = new GenericCashe<int ,string>();
+            //cashe.Add(1, "Cash01");
+            //cashe.Add(2, "Cash02");
+            //cashe.Add(3, "Cash03");
+
+            //Console.WriteLine(cashe.GetValue(2));
+            //Console.WriteLine($"{cashe.Expitation(1)} is expired {cashe.IsExpired}");
+
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

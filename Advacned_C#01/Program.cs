@@ -77,6 +77,13 @@ namespace Advacned_C_01
             //genericParamterless.Create();
             #endregion
 
+            #region Q10:  What is the interface constraint? Write an example.
+            ////T must implement interface
+            //GenericInterface<int> genericInterface = new GenericInterface<int>();
+            //Console.WriteLine(genericInterface.Multiplication(3, 5)); //15
+            //Console.WriteLine(genericInterface.Sum(3, 5)); //8
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

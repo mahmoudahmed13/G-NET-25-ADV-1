@@ -90,6 +90,15 @@ namespace Advacned_C_01
             //genericBaseclass.AddPerson(new Person() { Name = "Mahmoud", Age = 30 });
             #endregion
 
+            #region Q12: How do you apply multiple constraints? Write an example. 
+            //You can apply multiple constraints on a generic type parameter using the (where) keyword.
+            //This allows you to combine base class, interface, new(), struct, and
+            //class constraints together for maximum type safety.
+
+            //MultipleConstraints<Person> multipleConstraints = new();
+
+            #endregion
+
 
         }
         public static void Swap<T>(ref T a, ref T b)

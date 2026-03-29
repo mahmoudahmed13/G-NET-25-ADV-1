@@ -16,7 +16,5 @@ namespace Advacned_C_01
         {
             throw new NotImplementedException();
         }
-
-        public 
     }
 }

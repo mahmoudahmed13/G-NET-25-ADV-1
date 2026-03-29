@@ -103,6 +103,15 @@ namespace Advacned_C_01
             // returns the default value for type T: null for reference types, 0/false for value types.
             #endregion
 
+            #region Q14: Write a SafeList<T> that returns default when the index is invalid.
+            //SafeList<int> safeList = new SafeList<int>();
+            //safeList.Add(1);
+            //safeList.Add(2);
+            //safeList.Add(3);
+            //Console.WriteLine(safeList.GetIndex(1)); //2
+            //Console.WriteLine(safeList.GetIndex(5)); //0
+            #endregion
+
         }
         public static void Swap<T>(ref T a, ref T b)
         {

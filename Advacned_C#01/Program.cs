@@ -125,6 +125,11 @@ namespace Advacned_C_01
             //Marked with in keyword. T can only appear in input positions.
             #endregion
 
+            #region Q17: What is the difference between covariance and contravariance?
+            //Covaraince -> producer of T and return only(output). like -> IEnumerable<out T>
+            //Contravaraince -> Consumer of T and input only(parameter).like -> IComparer<in T>
+
+            #endregion
 
         }
         public static void Swap<T>(ref T a, ref T b)
